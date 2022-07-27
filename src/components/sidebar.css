@@ -1,6 +1,6 @@
 /* style sidebar */
 .sidebar {
-    width: 250px;
+    width: 300px;
     padding: 0px 0;
     background-color: var(--bgColor);
     padding-top: 250px;
@@ -16,10 +16,10 @@
 }
 
 .logo img {
-    top: 28px;
-    right: 34px;
-    width: 180px;
-    height: 180px;
+    top: 20px;
+    right: 50px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
     position: relative;
     display: block;
@@ -28,9 +28,9 @@
 .logo::before {
     content: '';
     position: absolute;
-    top: -90%;
-    right: -33px;
-    width: 312px;
+    top: -82%;
+    right: -28px;
+    width: 353px;
     border-radius: 50%;
     background-color: white;
     height: 392px;
@@ -48,7 +48,7 @@ li {
     border-bottom: 1px solid rgba(255, 255, 255, .4);
     padding-top: 10px;
     padding-right: 20px;
-    height: 60px;
+    height: 70px;
 }
 
 .icon-link {
@@ -83,15 +83,14 @@ i {
 }
 
 /* active item */
-.icon-link.active{
+.icon-link.active {
     background-color: var(--primaryColor);
     padding-right: 2rem;
 }
+
 .icon-link.active i {
     color: var(--secondaryColor);
 }
 
 
-@media screen and (max-width : 1000px) {
-    
-}
+@media screen and (max-width : 1000px) {}
