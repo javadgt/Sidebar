@@ -1,0 +1,43 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--primaryColor);
+  margin: 0%;
+  font-size: 1.2rem;
+}
+
+:root {
+  --primaryColor: #dbeef3;
+  --secondaryColor: #232424;
+  --bgColor: #0d98ba;
+}
+
+#root{
+  display: flex;
+  align-items: center;
+}
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+i{
+  font-size: 1.4rem;
+  vertical-align: middle;
+  margin-left: .4rem;
+}
+
+h1{
+  color: #232424;
+}
