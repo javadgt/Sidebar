@@ -1,6 +1,6 @@
 import { useAppContext } from '../../context/AppContext';
-import {Link} from 'react-router-dom'
 import './MobileSidebar.css'
+import MobileItem from './MobileItem';
 const MobileSidebar = ({ activeMenue, setActiveMenue }) => {
     const items = useAppContext().slice(0, 4)
     console.log(activeMenue);
@@ -8,13 +8,11 @@ const MobileSidebar = ({ activeMenue, setActiveMenue }) => {
         <>
             <div className="sidebar-mobile">
                 {items.map(munueItem => {
+                    console.log(munueItem);
                     return (
-                        <Link to={munueItem.route} key={munueItem.id}
-                            onClick={() => setActiveMenue(munueItem.id)}
-                            className={activeMenue === munueItem.id ? 'menu-item-mobile active' : 'menu-item-mobile'}>
-                            <i className={munueItem.iconName}></i>
-                            <span>{munueItem.name}</span>
-                        </Link>
+                        <MobileItem {...munueItem} key={munueItem.id}
+                            setActiveMenue={setActiveMenue}
+                            activeMenue={activeMenue} />
                     )
                 })}
 
